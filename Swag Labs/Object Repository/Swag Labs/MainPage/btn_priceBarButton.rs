@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_closeError</name>
+   <name>btn_priceBarButton</name>
    <tag></tag>
-   <elementGuidId>5a505796-fb83-4b81-a396-449306fd6809</elementGuidId>
+   <elementGuidId>3771c014-acf0-49e7-ace1-ca679925169b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='error-button']</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value></value>
+         <value>//div[@class='inventory_item_name ' and text()='${product}']/../../..//div//button[text()='${button}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

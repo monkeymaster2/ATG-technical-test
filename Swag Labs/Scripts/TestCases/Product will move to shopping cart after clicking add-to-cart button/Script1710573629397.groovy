@@ -17,40 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open url'
-WebUI.openBrowser(GlobalVariable.GlobalURL)
+'Open browser and login'
+WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Login'), [('username') : username, ('password') : password], 
+    FailureHandling.STOP_ON_FAILURE)
 
-'Maximize windown'
-WebUI.maximizeWindow()
+'Add product to cart'
+WebUI.click(findTestObject('Swag Labs/MainPage/btn_priceBarButton', [('product') : productName, ('button') : 'Add to cart']))
 
-'Wait for page load'
-WebUI.waitForPageLoad(3)
+'Verify product is added successfully and "Remove" button is shown'
+WebUI.verifyElementPresent(findTestObject('Swag Labs/MainPage/btn_priceBarButton', [('product') : productName, ('button') : 'Remove']), 
+    1)
 
-'Input username'
-WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Username'), invalid_username)
+'Open shopping cart'
+WebUI.click(findTestObject('Swag Labs/MainPage/icon_shoppingCart'))
 
-'Input password'
-WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Password'), invalid_password)
+'Verify product is added to cart'
+WebUI.verifyElementPresent(findTestObject('Swag Labs/ShoppingCartPage/text_itemName', [('product') : productName]), 0)
 
-'Click login button'
-WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
+'Remove product in shopping cart'
+WebUI.click(findTestObject('Swag Labs/ShoppingCartPage/btn_removeButton', [('product') : productName]))
 
-'Error message is shown'
-WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
+'Verify product is deleted'
+WebUI.verifyElementNotPresent(findTestObject('Swag Labs/ShoppingCartPage/text_itemName', [('product') : productName]), 2)
 
-//WebUI.click(findTestObject('Swag Labs/General/btn_closeError'))
-//
-//'Input username'
-//WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Username'), invalid_username)
-//
-//'Input blank password'
-//WebUI.clearText(findTestObject('Swag Labs/LoginPage/input_Password'))
-//
-//'Click login button'
-//WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
-//
-//WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
+'Logout and close browser'
+WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Close browser'
-WebUI.closeBrowser()
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify that product is removed when delete from shopping cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>68b55fa1-6392-444f-8f14-1bf384d1d727</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aee5f48e-55ce-4519-9c6f-edcac87c513c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95927a1e-e958-4843-9ce0-467181f48df7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d571ebc0-f45e-4bd0-87b6-d9cf93a5318b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>aee5f48e-55ce-4519-9c6f-edcac87c513c</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>95927a1e-e958-4843-9ce0-467181f48df7</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sauce Labs Bike Light'</defaultValue>
+      <description></description>
+      <id>d571ebc0-f45e-4bd0-87b6-d9cf93a5318b</id>
+      <masked>false</masked>
+      <name>productName</name>
+   </variable>
+</TestCaseEntity>

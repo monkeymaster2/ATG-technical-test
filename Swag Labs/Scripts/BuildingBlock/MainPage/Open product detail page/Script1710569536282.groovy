@@ -17,40 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open url'
-WebUI.openBrowser(GlobalVariable.GlobalURL)
+WebUI.verifyElementPresent(findTestObject('Swag Labs/MainPage/text_productName', [('product') : productName]), 3)
 
-'Maximize windown'
-WebUI.maximizeWindow()
+switch (method) {
+    case 'name':
+        WebUI.click(findTestObject('Swag Labs/MainPage/text_productName', [('product') : productName]))
+		break
+		
+    case 'image':
+        WebUI.click(findTestObject('Swag Labs/MainPage/img_productImage', [('product') : productName]))
+		break
+		
+	default:
+		WebUI.click(findTestObject('Swag Labs/MainPage/text_productName', [('product') : productName]))
+		break
+}
 
-'Wait for page load'
-WebUI.waitForPageLoad(3)
-
-'Input username'
-WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Username'), invalid_username)
-
-'Input password'
-WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Password'), invalid_password)
-
-'Click login button'
-WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
-
-'Error message is shown'
-WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
-
-//WebUI.click(findTestObject('Swag Labs/General/btn_closeError'))
-//
-//'Input username'
-//WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Username'), invalid_username)
-//
-//'Input blank password'
-//WebUI.clearText(findTestObject('Swag Labs/LoginPage/input_Password'))
-//
-//'Click login button'
-//WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
-//
-//WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
-
-'Close browser'
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Swag Labs/DetailPage/object_inventoryDetailPage'), 3)
 

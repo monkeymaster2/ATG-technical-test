@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Product detail should be shown when click product name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6ab4cfd9-c2ac-4f9f-ad93-45e2469f1d06</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>739a5222-9c26-4241-85c4-d5b0b04bc16c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a005d7ae-00e6-4173-abc7-3fff9346061d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1d3f4bad-26df-43bd-a45e-6a94f985020d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>739a5222-9c26-4241-85c4-d5b0b04bc16c</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>a005d7ae-00e6-4173-abc7-3fff9346061d</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sauce Labs Backpack'</defaultValue>
+      <description></description>
+      <id>1d3f4bad-26df-43bd-a45e-6a94f985020d</id>
+      <masked>false</masked>
+      <name>productName</name>
+   </variable>
+</TestCaseEntity>
