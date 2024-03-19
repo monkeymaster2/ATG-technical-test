@@ -12,101 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>558beb9a-4c2c-4058-8b8a-ffe70c7103e6</testSuiteGuid>
    <testCaseLink>
-      <guid>80283a6e-4db6-4f6c-aadd-2cb302069625</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCases/Product detail should be shown when click product image</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>52d67675-6667-4881-af37-b1ea099208ad</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCases/Product detail should be shown when click product name</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>739a5222-9c26-4241-85c4-d5b0b04bc16c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a005d7ae-00e6-4173-abc7-3fff9346061d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>1d3f4bad-26df-43bd-a45e-6a94f985020d</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>84bb8151-2754-4f10-a28e-684f71e45cec</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCases/Product will move to shopping cart after clicking add-to-cart button</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>35ae4c77-8ee7-46c5-a1d5-1bd01a3d0524</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a9d08c75-b774-4590-9f7b-8d85f78dee62</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8290cdfc-62fa-4ab6-b397-05b43e5e306a</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>979e2487-2016-4a2f-b831-61e104aabb1f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCases/Verify that users can not successfully log in with invalid credentials</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d6a03876-57ef-4a79-8899-0897bf57ec03</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>80b0e564-ca11-4a4f-9ec6-e89e719ade96</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a601abb1-e3be-4518-9769-494fecbd30e1</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>48126ea1-1dea-4782-9229-e7ec5b38e948</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8a6cb681-11e5-43c4-8634-cadd8ecdfaf3</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ac47c6c6-3740-49f8-97f8-cc852b218f4e</guid>
+      <guid>bcf9ef79-542b-49f0-be9f-98a6a5fa86c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCases/Verify that users can successfully log in with valid credentials</testCaseId>
@@ -122,6 +28,37 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>fb54e30e-9e31-477c-93f3-211f09afa389</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7e695d1d-3283-4400-b038-fdc2e67e2034</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCases/Verify that user can sort product by dropdown</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>286821c4-3b99-4936-8e92-52b08317ffc1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>571d31c3-b677-4f6f-8802-294664936fa7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>532d5920-3f05-4165-8ed9-86735eb49a5a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>66fa21b0-540a-4082-b4fc-2f4ef156d74a</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
