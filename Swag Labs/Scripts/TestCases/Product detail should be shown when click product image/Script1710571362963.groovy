@@ -18,8 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Open browser and login'
-WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Login'), [('username') : username, ('password') : password], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Login'), [('username') : username, ('password') : password],
+	FailureHandling.STOP_ON_FAILURE)
 
 'Open detail of "Sauce Labs Backpack" product by image'
 WebUI.callTestCase(findTestCase('BuildingBlock/MainPage/Open product detail page'), [('productName') : productName, ('method') : 'image'], 
