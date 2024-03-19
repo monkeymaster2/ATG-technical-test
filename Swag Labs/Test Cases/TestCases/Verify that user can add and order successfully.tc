@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify that user can add and order successfully</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccf4465b-b448-40e7-a249-cdad354ad5d0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>af92b605-2c1d-4dce-8126-b003aedfaac1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>51098c8a-a440-43b1-84c4-e313f8583ad5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>443a8b2c-5eb3-4a47-81bd-983b0d8c2e63</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>af92b605-2c1d-4dce-8126-b003aedfaac1</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('User_Data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>51098c8a-a440-43b1-84c4-e313f8583ad5</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sauce Labs Bike Light'</defaultValue>
+      <description></description>
+      <id>443a8b2c-5eb3-4a47-81bd-983b0d8c2e63</id>
+      <masked>false</masked>
+      <name>productName</name>
+   </variable>
+</TestCaseEntity>
