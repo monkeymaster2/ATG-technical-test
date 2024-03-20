@@ -38,19 +38,6 @@ WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
 'Error message is shown'
 WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
 
-//WebUI.click(findTestObject('Swag Labs/General/btn_closeError'))
-//
-//'Input username'
-//WebUI.setMaskedText(findTestObject('Swag Labs/LoginPage/input_Username'), invalid_username)
-//
-//'Input blank password'
-//WebUI.clearText(findTestObject('Swag Labs/LoginPage/input_Password'))
-//
-//'Click login button'
-//WebUI.click(findTestObject('Swag Labs/LoginPage/btn_Loginbutton'))
-//
-//WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_ErrorMessage', [('error_message') : error_msg]), 3)
-
 'Close browser'
 WebUI.closeBrowser()
 

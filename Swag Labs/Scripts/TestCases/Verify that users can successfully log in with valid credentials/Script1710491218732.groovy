@@ -17,8 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open browser and log in'
 WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Login'), [('username') : username, ('password') : password], 
     FailureHandling.STOP_ON_FAILURE)
 
+'Log out and close browser'
 WebUI.callTestCase(findTestCase('BuildingBlock/Login_Logout/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

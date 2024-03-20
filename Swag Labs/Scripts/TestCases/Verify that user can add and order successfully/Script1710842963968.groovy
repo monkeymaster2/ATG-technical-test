@@ -54,6 +54,7 @@ WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_titlePage', [('ti
 'Verify product added is shown'
 WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_productName', [('product') : productName]), 2)
 
+'Click finish'
 WebUI.click(findTestObject('Swag Labs/ShoppingCartPage/CheckOutOverview/button_finishButton'))
 
 WebUI.verifyElementPresent(findTestObject('Swag Labs/universal_titlePage', [('title') : 'Checkout: Complete!']), 2)
